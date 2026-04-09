@@ -26,7 +26,7 @@ It helps manage products, users, and basic inventory operations.
 3. Copy project folder to:
    C:/xampp/htdocs/
 
-4. Open browser and go to:   http://localhost/SAD_IMS_Report
+4. Open browser and go to:   http://localhost/folder name 
 
 
 
