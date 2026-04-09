@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Report</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #43cea2, #185a9d);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        .table-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #185a9d;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #ddd;
+        }
+
+        .btns {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .print {
+            background: #28a745;
+        }
+
+        .export {
+            background: #007bff;
+        }
+    </style>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+
+        function exportData() {
+            alert("Export feature coming soon!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Inventory Report</h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Item ID</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Pen</td>
+                <td>50</td>
+                <td>10</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Notebook</td>
+                <td>10</td>
+                <td>200</td>
+                <td style="color:red;">Low Stock</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Marker</td>
+                <td>30</td>
+                <td>50</td>
+                <td>In Stock</td>
+            </tr>
+        </table>
+
+        <div class="btns">
+            <button class="print" onclick="printPage()">Print</button>
+            <button class="export" onclick="exportData()">Export</button>
+        </div>
+    </div>
+
+</body>
+</html>

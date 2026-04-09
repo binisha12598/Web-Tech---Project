@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Item</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .add-btn {
+            background: #28a745;
+        }
+
+        .clear-btn {
+            background: #dc3545;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .success {
+            text-align: center;
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function showMessage() {
+            alert("Item Added Successfully!");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+        <h2>Add Inventory Item</h2>
+
+        <form onsubmit="showMessage()">
+
+            <label>Item Name</label>
+            <input type="text" required>
+
+            <label>Quantity</label>
+            <input type="number" required>
+
+            <label>Price</label>
+            <input type="number" required>
+
+            <label>Supplier</label>
+            <input type="text" required>
+
+            <div class="btn-group">
+                <button type="submit" class="add-btn">Add</button>
+                <button type="reset" class="clear-btn">Clear</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
